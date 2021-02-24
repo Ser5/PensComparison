@@ -45,20 +45,52 @@ table {
 
 
 * {box-sizing:border-box;}
-body, table {background:#444; font-family:Arial; color:white; line-height:125%;}
+body {background:#444; font-family:Arial; font-size:16px; color:white; line-height:125%;}
 table {width:100%;}
-th, td {border:1px solid #333; text-align:left;}
-th, tr:hover {background:#333;}
-th {padding: 20px 5px;}
-td {padding: 20px 10px;}
-tr:hover td {border-left-color:#555; border-right-color:#555;}
-
-.m1 {color:#d8ccff;}
-.m3 {color:#cfc;}
+th, td {border:1px solid #333; text-align:left; vertical-align:top;}
+th {background:#333;}
+th {padding:20px 5px;}
+td {padding:20px 10px;}
 
 a, .name {color:#79f;}
 a {text-decoration:underline;}
 a:hover {text-decoration:none;}
 
-.float {position:fixed; left:1px; display:none;}
+.float {position:fixed; left:1px;}
 .float th {padding-top:5px; padding-bottom:5px;}
+
+.m1 {color:#d8ccff;}
+.m3 {color:#cfc;}
+
+.left-headers {display:none; flex-direction:column; justify-content:stretch; flex-shrink:0; width:120px; font-size:90%; font-weight:bold;}
+.left-headers__item {}
+.left-headers__item:not(:last-child) {padding-bottom:10px;}
+.text {flex-grow:1;}
+
+@media (min-width:767px) {
+	tr:hover {background:#333;}
+	tr:hover td {border-left-color:#555; border-right-color:#555;}
+}
+
+@media (max-width:1280px) {
+	body {font-size:14px;}
+}
+
+@media (max-width:1000px) {
+	body {font-size:12px;}
+}
+
+@media (max-width:768px) {
+	body {font-size:14px;}
+	.float {display:none;}
+	.main, tr, th {display:block;}
+	tr:first-child {display:none;}
+	th {padding:20px 10px; font-size:110%; font-weight:bold;}
+	td {display:flex;}
+	.left-headers {display:flex;}
+}
+
+@media (max-width:420px) {
+	body {font-size:12px;}
+	.left-headers {width:100px;}
+}
