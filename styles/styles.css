@@ -1,0 +1,64 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+* {box-sizing:border-box;}
+body, table {background:#444; font-family:Arial; color:white; line-height:125%;}
+table {width:100%;}
+th, td {border:1px solid #333; text-align:left;}
+th, tr:hover {background:#333;}
+th {padding: 20px 5px;}
+td {padding: 20px 10px;}
+tr:hover td {border-left-color:#555; border-right-color:#555;}
+
+.m1 {color:#d8ccff;}
+.m3 {color:#cfc;}
+
+a, .name {color:#79f;}
+a {text-decoration:underline;}
+a:hover {text-decoration:none;}
+
+.float {position:fixed; left:1px; display:none;}
+.float th {padding-top:5px; padding-bottom:5px;}
